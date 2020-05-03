@@ -80,7 +80,7 @@ var storage = multer.diskStorage({
       console.log('###### FILE-NAME #######');
 
       file.mimetype = 'image/jpg';
-      //file.originalname = 'mimg.jpg';
+      file.originalname = 'mimg.jpg';
       console.log(file.originalname);
       cb(null, file.originalname);
 
