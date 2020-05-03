@@ -13,6 +13,7 @@ let sc = 6;
 let w;
 let h;
 
+console.log("SKETCH!");
 
 
 function pxlRGB(img,x,y){
