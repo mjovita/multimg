@@ -43,6 +43,7 @@ let count = 0;
 
 
 var storage = multer.diskStorage({
+  console.log('###### STORAGE #######');
   destination: async function(req, file, cb){
 
 
