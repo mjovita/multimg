@@ -1,0 +1,42 @@
+
+<div class='jumbotron text-center' id='trans-grey'>
+  <h1 class='display-4'>My Photomosaic</h1>
+  <p class="lead">Upload an image to photomosaic</p>
+  <hr class="my-4">
+  <p>Additional <u>source</u> images may be added to the database</p>
+
+</div>
+
+
+<div class='row justify-content-center'>
+  <div class='d-flex justify-content-center align-items-center'>
+
+
+
+    <div class='d-inline-flex justify-content-start' id='trans-grey'>
+
+
+      <form id='myForm' method='post' action='/uploads' enctype="multipart/form-data" style='float:right;'>
+        <div class='p-2 border-bottom'>
+
+          <input type='file' name='file' accept="image/*" required/>
+          <mark><i class='fas fa-image'></i> Main Image</mark>
+        </div>
+
+        <div class='p-2 border-bottom'>
+
+          <input id="image_upload" type='file' name='files' accept="image/*" multiple/>
+          <mark><i class='fas fa-images'></i> Source images</mark>
+        </div>
+
+        <div class='p-2 border-bottom'>
+          <button id="submit" type='submit'><i class='fas fa-file-upload'></i>Upload</button>
+        </div>
+
+
+
+      </form>
+
+    </div>
+  </div>
+</div>
