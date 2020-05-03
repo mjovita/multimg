@@ -75,12 +75,10 @@ var storage = multer.diskStorage({
     if(file.fieldname === 'file'){
       console.log('###### FILE-NAME #######');
 
-      fs.rename(maindir+'/'+file.originalname, maindir+'/'+'mimg.jpg', function(err){
-        if(err) throw err;
-        console.log('File renamed');
-        file.mimetype = 'image/jpg';
-        cb(null, "mimg.jpg");
-      });
+      file.mimetype = 'image/jpg';
+      file.originalname = 'mimg.jpg';
+      console.log(file.originalname);
+      cb(null, file.originalname);
 
 
       //console.log(file.originalname);
