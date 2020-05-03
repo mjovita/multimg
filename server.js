@@ -50,6 +50,10 @@ var storage = multer.diskStorage({
       fs.mkdirSync(dir);
     }
 
+    if(!fs.existsSync(maindir)){
+      fs.mkdirSync(maindir);
+    }
+
 
     if(file.fieldname === 'file'){
       console.log('###### FILE #######');
