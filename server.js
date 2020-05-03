@@ -11,7 +11,7 @@ const expressLayouts = require('express-ejs-layouts');
 const util = require('util');
 const DataStore = require('nedb');
 
-
+console.log("SERVER!");
 
 
 const average = require('image-average-color');
