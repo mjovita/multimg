@@ -43,7 +43,6 @@ let count = 0;
 
 
 var storage = multer.diskStorage({
-  console.log('###### STORAGE #######');
   destination: async function(req, file, cb){
 
 
@@ -53,12 +52,14 @@ var storage = multer.diskStorage({
 
 
     if(file.fieldname === 'file'){
+      console.log('###### FILE #######');
 
       return cb(null, maindir);
     }
 
 
     if(file.fieldname === 'files'){
+      console.log('###### FILESSS #######');
 
       file.mimetype = 'image/jpg';
 
