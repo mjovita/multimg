@@ -14,7 +14,7 @@
     "color-convert": "^2.0.1",
     "dominant-color": "0.0.1",
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-ejs-layouts": "^2.5.0",
     "image-average-color": "^1.0.0",
     "multer": "^1.4.2",
